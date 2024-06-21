@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="wrapper.css">
+        <Title> kalkylator </title>
+    </head>
+<Body class="wrapper">
+<header></header>
+<div1>AC</div1>
+<div2>+/-</div2>
+<div3>%</div3>
+<div4>/</div4>
+<div5>7</div5>
+<div6>8</div6>
+<div7>9</div7>
+<div8>*</div8>
+<div9>4</div9>
+<div10>5</div10>
+<div11>6</div11>
+<div12>-</div12>
+<div13>1</div13>
+<div14>2</div14>
+<div15>3</div15>
+<div16>+</div16>
+<footer>0</footer>
+<div17>.</div17>
+<div18>=</div18>
+<div60><img src="desc.jpg"></div60>
+<script>
+     const div7 = document.querySelector('div7');
+     const div1 = document.querySelector('div1');
+     const div2 = document.querySelector('div2')
+     const div3 = document.querySelector('div3');
+     const div4 = document.querySelector('div4');
+     const div5 = document.querySelector('div5');
+     const div6 = document.querySelector('div6');
+     const div8 = document.querySelector('div8');
+     const div9 = document.querySelector('div9');
+     const div10 = document.querySelector('div10');
+     const div11 = document.querySelector('div11');
+     const div12 = document.querySelector('div12');
+     const div13 = document.querySelector('div13');
+     const div14 = document.querySelector('div14');
+     const div15 = document.querySelector('div15');
+     const div16 = document.querySelector('div16');
+     const div17 = document.querySelector('div17');
+     const div18 = document.querySelector('div18');
+     const footer = document.querySelector('footer');
+     const header = document.querySelector('header');
+     header.textContent = "0" ;         
+    div7.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "9";
+        } else {
+            const numb =header.textContent + "9";
+                    header.textContent = numb;
+        }                                                           
+                })
+    div4.addEventListener('click', () => {
+        if(header.textContent[header.textContent.length - 1] != "/" && header.textContent[header.textContent.length - 1] != "*"
+        && header.textContent[header.textContent.length - 1] != "-" && header.textContent[header.textContent.length - 1] != "+"
+        && header.textContent[header.textContent.length - 1] != "." ){
+            const numb =header.textContent + "/";
+                    header.textContent = numb;}}                                         
+                )
+    div5.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "7";
+        } else {
+            const numb =header.textContent + "7";
+                    header.textContent = numb;
+        }                                        
+                })  
+    div6.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "8";
+        } else {
+            const numb =header.textContent + "8";
+                    header.textContent = numb;
+        }                                          
+                })
+    div8.addEventListener('click', () => {
+        if(header.textContent[header.textContent.length - 1] != "/" && header.textContent[header.textContent.length - 1] != "*"
+        && header.textContent[header.textContent.length - 1] != "-" && header.textContent[header.textContent.length - 1] != "+"
+        && header.textContent[header.textContent.length - 1] != "."){
+            const numb =header.textContent + "*";
+                    header.textContent = numb;}}                                         
+                )
+    div9.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "4";
+        } else {
+            const numb =header.textContent + "4";
+                    header.textContent = numb;
+        }                                         
+                }) 
+    div10.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "5";
+        } else {
+            const numb =header.textContent + "5";
+                    header.textContent = numb;
+        }                                         
+                })
+    div11.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "6";
+        } else {
+            const numb =header.textContent + "6";
+                    header.textContent = numb;
+        }                                          
+                })
+    div12.addEventListener('click', () => {
+        if(header.textContent[header.textContent.length - 1] != "/" && header.textContent[header.textContent.length - 1] != "*"
+        && header.textContent[header.textContent.length - 1] != "-" && header.textContent[header.textContent.length - 1] != "+"
+        && header.textContent[header.textContent.length - 1] != "."){
+            const numb =header.textContent + "-";
+                    header.textContent = numb;}}                                         
+                )
+    div13.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "1";
+        } else {
+            const numb =header.textContent + "1";
+                    header.textContent = numb;
+        }                                          
+                })
+    div14.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "2";
+        } else {
+            const numb =header.textContent + "2";
+                    header.textContent = numb;
+        }                                          
+                })
+    div15.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "3";
+        } else {
+            const numb =header.textContent + "3";
+                    header.textContent = numb;
+        }                                          
+                }) 
+    div16.addEventListener('click', () => {
+        if(header.textContent[header.textContent.length - 1] != "/" && header.textContent[header.textContent.length - 1] != "*"
+        && header.textContent[header.textContent.length - 1] != "-" && header.textContent[header.textContent.length - 1] != "+"
+        && header.textContent[header.textContent.length - 1] != "."){
+            const numb =header.textContent + "+";
+                    header.textContent = numb;}}                                         
+                )
+    div17.addEventListener('click', () => {       
+            const numb =header.textContent + ".";
+                    header.textContent = numb;                                                 
+                })
+    footer.addEventListener('click', () => {
+        if(header.textContent == "0"){
+            header.textContent = "0";
+        } else {
+            const numb =header.textContent + "0";
+                    header.textContent = numb;
+        }                                          
+                })
+    div1.addEventListener('click', () => {                   
+                    header.textContent = "0";                                         
+                })
+    div18.addEventListener('click', () => {                   
+                    header.textContent = eval(header.textContent);                                         
+                })
+    div3.addEventListener('click', () => {                   
+                    header.textContent = eval(header.textContent + "/100");                                         
+                })
+    div2.addEventListener('click', () => {                   
+                    header.textContent = "-";                                         
+                })                     
+</script>
+</Body>
+</html>
